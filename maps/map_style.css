@@ -1,0 +1,161 @@
+/* Leaflet override styles */
+
+.leaflet-container {
+	background:url(../images/map_fade_back.png) no-repeat !important;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    box-shadow: 0px !important;
+}
+
+.leaflet-popup-content-wrapper {
+    border: 0px !important;
+    padding: 0px !important;
+}
+
+.leaflet-popup-content {
+	border: 14px solid #F8F8F8 !important;
+    margin: 0px !important;
+	padding: 10px !important;
+	width: 316px !important;
+}
+
+
+/* Popup Tabs (fall back from jquery if required) */
+.mam_tab { display:block; width:110px; height:40px; text-indent:-999px; float:left; border-bottom: 5px solid #c91414;}
+.mam_tab a:link { display:block; background:url(tab_mammals.png) no-repeat !important; width:110px; height:40px; text-indent:-999px; float:left; }
+.mam_tab a:visited { display:block; background:url(tab_mammals.png) no-repeat !important; width:110px; height:40px; text-indent:-999px; float:left; }
+.mam_tab a:hover { display:block; background:url(tab_mammals.png) no-repeat !important; width:110px; height:40px; text-indent:-999px; float:left; border-bottom: 5px solid #c91414; }
+
+.amp_tab a:link { display:block; background:url(tab_amp.png) no-repeat !important; width:118px; height:40px; text-indent:-999px; float:left; border-bottom: 5px solid #FAFAFA; }
+.amp_tab a:visited { display:block; background:url(tab_amp.png) no-repeat !important; width:118px; height:40px; text-indent:-999px; float:left; border-bottom: 5px solid #FAFAFA; }
+.amp_tab a:hover { display:block; background:url(tab_amp.png) no-repeat !important; width:118px; height:40px; text-indent:-999px; float:left; border-bottom: 5px solid #148f0d; }
+
+.cor_tab a:link { display:block; background:url(tab_coral.png) no-repeat !important; width:88px; height:40px; text-indent:-999px; float:left; border-bottom: 5px solid #FAFAFA;}
+.cor_tab a:visited { display:block; background:url(tab_coral.png) no-repeat !important; width:88px; height:40px; text-indent:-999px; float:left; border-bottom: 5px solid #FAFAFA;}
+.cor_tab a:hover { display:block; background:url(tab_coral.png) no-repeat !important; width:88px; height:40px; text-indent:-999px; float:left; border-bottom: 5px solid #350a7d;}
+
+.popup_title {     background: none repeat scroll 0 0 #FAFAFA;
+    border-bottom: 1px solid #999999;
+    color: #000000 !important;
+    font-size: 22px;
+    text-align: center;
+	margin-top: 45px;	}
+
+.popup_link { font-weight:bold; color:#76372E !important; text-decoration:underline !important; }
+
+/* Update existing EDGE website styles to accomodate map */
+
+.Map { margin-left:24px; }
+
+.MainCol {
+    width: 907px !important;
+}
+
+/* Guide / results styles */
+
+#result_count { border-bottom: 1px solid #CCCCCC; padding: 5px; }
+
+.thumb_popup { float: left; margin-right:15px; margin-bottom:20px; }
+
+.thumb_lrg {	 float: left; margin-right:15px; }
+
+#desc_popup { float:left; width:220px; }
+
+.list_results {     border-bottom: 1px solid #A31D1D;
+    float: left;
+    padding: 10px;
+    width: 844px;		}
+	
+.list_results:nth-child(even) {  
+  background-color:#e5e5e5; color:#4c4c4c; border-bottom: 1px solid #999999;
+}
+
+.map_guide_wrapper {	         border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    padding: 15px 22px 22px;
+    width: 865px;
+	background: #FAFAFA;	}
+
+.map_guide_wrapper_footer {	         border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    float: left;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 16px 22px 22px;
+    width: 865px;
+	background: #FAFAFA;	}	
+	
+#guide_country { background: url("g_red_block.png") no-repeat scroll 0 1px transparent;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-indent: 22px;
+    width: 100%; }
+	
+#guide_zone { 
+    float: left;
+    margin-left: -4px;
+    margin-top: 14px;
+    width: 100%; }
+
+#guide_selection { background: url("g_specific_block.png") no-repeat scroll 0 1px transparent;
+    float: left;
+    margin-bottom: 22px;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-indent: 22px;
+    width: 100%; }
+	
+#species_richness_scale {     background: url("species_richness.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 27px;
+    width: 335px;
+    display:none;	}
+
+#countries { padding:10px; }
+#searchfield { padding:10px; }
+#search { padding:10px; }
+	
+/* Map */
+
+#edge_map a {color:inherit;}
+
+#edge_map {height:500px; border: 14px solid #F8F8F8;}
+
+/* Search */
+
+button {    
+    background: url("button_b.png") repeat scroll 0 0 transparent;
+    border-radius: 9px 9px 9px 9px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 14px;
+    margin-right: 6px;
+    padding: 6px;}
+	
+input {width:165px;}
+
+/* Popups */
+
+#edge_map a.tabs {background-color:#EE6E6E; color:white; border-style:none; padding:5px; font-weight:bold; cursor:pointer; margin-right:5px;}
+#edge_map li {display:none; padding:5px;}
+#edge_map li.mammals {display:block; float:left;}
+#edge_map li.amphibians {display:none; float:left;}
+#edge_map li.coral reef {display:none; float:left;}
+#edge_map li.mammals {display:block; float:left;}
+.leaflet-popup-content {min-height:227px;}
+#edge_map ul {max-height:120px; overflow-y:scroll; overflow-x:hidden; padding:0px;}
+#edge_map ul li:nth-child(even) {  
+  background-color:#e5e5e5; color:#4c4c4c;  border-bottom: 1px solid #999999; width:287px; float: left;
+}
+#edge_map ul li:nth-child(odd) {  
+  background-color:#FAFAFA; color:#4c4c4c;
+  border-bottom: 1px solid #999999;
+  width:287px; float: left;
+}
